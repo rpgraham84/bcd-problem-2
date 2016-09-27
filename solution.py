@@ -16,7 +16,7 @@ class Solution(object):
         more or less frequently than others. It is also the algorithm 
         implemented by random.shuffle.
         """
-        for i in range(1, len(self.ads)):
+        for i in reversed(range(1, len(self.ads))):
             j = self.urandrange(i + 1)
             self.ads[i], self.ads[j] = self.ads[j], self.ads[i]
 
